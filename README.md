@@ -78,3 +78,5 @@ Perhaps the easiest way of accomplishing this would be through scaffolding, and 
 //---CONTEXT:Secure
 
 While this would provide a little bit of extra work for the developer in having to set up the scaffolding, the benefits could end being several multiples on that work. In the HTTP example above, suppose there were 200 replacements that had to be made across 10 files, with a total of 15 contexts that needed to be specified. Setting up that scaffolding for 15 contexts would be far less work than having to manually replace each of those 200 items.
+
+One final usage to mention for the smart replacement: detection sensitivity. A typical find and replace has very little wiggle room. A find and replace using regex has some wiggle-room, though it is sometimes fairly cumbersome to utilize. Let's say someone made a single typo somewhere. Why would the developer think to (or want to) write the regex to find this case. It would be easy to supplement the detection rules with a typo parameter allowing a certain threshold of similarity.
